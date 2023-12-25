@@ -24,7 +24,7 @@
     "hardhat:compile": "npx hardhat compile",
     "hardhat:deploy": "npx hardhat run scripts/deploy.js --network localhost",
     "client:install": "cd client && npm install",
-    "client:start": "npm start"
+    "client:start": "cd client && npm start"
   },
   "dependencies": {
     "create-react-app": "^5.0.1"
