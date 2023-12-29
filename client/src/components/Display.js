@@ -27,7 +27,7 @@ const Display = ({ contract, account }) => {
           <a href={item} key={i} target="_blank">
             <img
               key={i}
-              src={`https://amaranth-magic-moose-546.mypinata.cloud/ipfs/${item.substring(
+              src={`https://tomato-lazy-mollusk-981.mypinata.cloud/ipfs/${item.substring(
                 6
               )}`}
               alt="new"

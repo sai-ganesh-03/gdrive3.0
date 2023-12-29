@@ -16,12 +16,12 @@ const FileUpload = ({ contract, account, provider }) => {
           url: "https://api.pinata.cloud/pinning/pinFileToIPFS",
           data: formData,
           headers: {
-            pinata_api_key: `c30edbd5512d70ab2c06`,
-            pinata_secret_api_key: `c8ff7dcfc77679695307a781610f3947f72083e40daed8641bfb495bdc323996`,
+            pinata_api_key: `b9fbb891aa9987257dd1`,
+            pinata_secret_api_key: `e2df42f366a36629e127f7b75256d3e7378e3d9ba11d6e41916346b9d024e328`,
             "Content-Type": "multipart/form-data",
           },
         });
-        const ImgHash = `https://amaranth-magic-moose-546.mypinata.cloud/ipfs/${resFile.data.IpfsHash}`;
+        const ImgHash = `https://tomato-lazy-mollusk-981.mypinata.cloud/ipfs/${resFile.data.IpfsHash}`;
         console.log(ImgHash);
         contract.add(account, ImgHash).catch((e) => console.log(e));
         alert("Successfully Image Uploaded");
